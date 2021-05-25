@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+ }
+
+ #parent {
+    height: 600px;
+    background-color: rgb(219, 219, 190);
+
+
+ }
+
+span {
+    color: rgb(2, 201, 28);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(197, 224, 200);
+    
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 2em 0.2em;
+    padding: 0.8em;
+    font-size: 1.2rem;
+
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+img {
+    margin: 5em 0 1.5em 0;
+
+    width: 45vw;
+}
+
+/* about-me */
+
+h2, h3, h5, h6, hr {
+  /* color: #ffffff; */
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  /* color: #dddddd; */
+  font-size: 13px;
+}
+
+.parent {
+  margin: 50px auto auto auto;
+  text-align: center;
+  width: 40em;
+  
+}
+
+.about-flex {
+
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+
+}
+
+.lang {
+  display: inline-flex;
+}
+
+
+
+.my-img {
+  width: 12rem;
+  align-items: flex-start;
+
+}
+
+.discription {
+  align-items: flex-start;
+  margin-left: 25px;
+  text-align: left;
+}
+
+hr {
+  width: 24px;
+  display: inline-block;
+  margin-right: 7px;
+  border: none;
+  border-top: 2px solid rgb(2, 201, 28);
+  padding-bottom: 4px;
+}
+
+.head {
+
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 11.5px;
+}
+
+.who {
+  margin: 10px auto 20px auto;
+}
+
+h5 {
+  display: inline;
+}
+
+.color {
+  color: rgb(97, 110, 99);
+}
+
+
+.languages {
+  /* background-color: #303030; */
+
+  margin-top: 13px;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  margin:auto;
+
+}
+
+h6 {
+  padding: 5px;
+}
+
+.elements {
+  padding: 0.5rem;
+}
+
+.lang-icons {
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+
+    margin: 10em auto;
+    max-width: 800px;
+  
+    
+}
+
+/* h4 {
+    align-items: baseline;
+} */
+
+.skill-imgs {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-div {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    -webkit-box-shadow: 6px 7px 10px -8px rgba(0,0,0,0.76);
+    -moz-box-shadow: 6px 7px 10px -8px rgba(0,0,0,0.76);
+    box-shadow: 6px 7px 10px -8px rgba(0,0,0,0.76);
+
+}
