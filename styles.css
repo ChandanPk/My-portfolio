@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
@@ -12,7 +13,7 @@ body {
  }
 
  #parent {
-    height: 600px;
+    height: 608px;
     background-color: rgb(219, 219, 190);
 
 
@@ -70,19 +71,11 @@ p {
 .parent {
   margin: 50px auto auto auto;
   text-align: center;
-  width: 40em;
+  width: 700px;
   
 }
 
-.about-flex {
 
-  width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  /* align-items: flex-start; */
-
-}
 
 .lang {
   display: inline-flex;
@@ -135,7 +128,7 @@ h5 {
   /* background-color: #303030; */
 
   margin-top: 13px;
-  max-width: 600px;
+  max-width: 750px;
   display: grid;
   grid-template-columns: 220px 220px 220px;
   margin:auto;
@@ -178,8 +171,7 @@ h6 {
     width: 220px;
     margin: 13px;
     display: inline-block;
-    -webkit-box-shadow: 0px 3px 10px -1px rgba(112,105,112,0.88);
-    -moz-box-shadow: 0px 3px 10px -1px rgba(112,105,112,0.88);
+
     box-shadow: 0px 3px 10px -1px rgba(112,105,112,0.88);
     text-align: center;
     padding: 2px;
@@ -187,8 +179,7 @@ h6 {
 }
 .skill-div:hover {
     transition: 300ms;
-    -webkit-box-shadow: 0px 3px 18px -1px rgba(112,105,112,0.88);
--moz-box-shadow: 0px 3px 18px -1px rgba(112,105,112,0.88);
+
 box-shadow: 0px 3px 18px -1px rgba(112,105,112,0.88);
 }
 
@@ -203,5 +194,90 @@ h4 {
 .img-div {
     width: 180px;
     height: 170px;
+    margin: auto;
+  }
 
-margin: auto;}
+.skill-header {
+  display: block;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Projects */
+
+.project-header {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}
+.pro-head {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.proj-section {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+.pigment {
+  color: rgb(2, 201, 28);
+}
+
+.project-list {
+  text-align: left;
+  margin-top: 3rem;
+  
+}
+
+.proj-description {
+  font-size: 16px;
+}
+
+
+.btn {
+  padding: 12px 16px;
+  padding-right: 30px;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: none;
+  background-color: #9AE6B4;  
+}
+
+.btn-2 {
+  border: 1px solid #9AE6B4;
+  background-color: whitesmoke;
+}
+
+.btn:hover {
+  box-shadow: 4px 2px 9px -2px rgba(43,54,43,0.75);
+  cursor: pointer;
+
+}
+
+/* fotter */
+
+footer {
+  height: 300px;
+  background-color: rgb(61, 61, 61);
+  color: #fff;
+}
+
+#contact {
+  display: inline-block;
+   margin: 50px auto;
+   font-size: 2.5rem;
+
+}
+
+
+.icon-sec {
+  margin: 0 15px 50px 15px;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 3px;
+}
