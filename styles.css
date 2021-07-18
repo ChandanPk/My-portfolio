@@ -10,6 +10,8 @@ a {
  }
 html {
     scroll-behavior: smooth;
+    height: 100%;
+
   }
 
 body {
@@ -22,8 +24,18 @@ body {
  }
 
  #parent {
-    height: 608px;
-    background-color: rgb(219, 219, 190);
+    /* height: 608px; */
+      background: rgb(219, 219, 190);
+      /* The image used */
+      /* background-image: url("https://www.publicdomainpictures.net/pictures/320000/nahled/background-image.png"); */
+    
+      /* Full height */
+      height: 100%; 
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
  }
 
  .fas {
@@ -376,4 +388,24 @@ p {
     }
     
 
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#parent {
+  /* The image used */
+  /* background-image: url("https://previews.123rf.com/images/oatstocker/oatstocker1712/oatstocker171200140/92091201-notepad-with-pencil-on-wood-board-background-using-wallpaper-for-education-business-photo-take-note-.jpg"); */
+  background: rgb(219, 219, 190);
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
