@@ -20,23 +20,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     text-align: center;
-    background-color: rgb(241, 245, 247);
+    /* background-color: rgb(241, 245, 247); */
  }
 
- #parent {
-    /* height: 608px; */
-      background: rgb(219, 219, 190);
-      /* The image used */
-      /* background-image: url("https://www.publicdomainpictures.net/pictures/320000/nahled/background-image.png"); */
-    
-      /* Full height */
-      height: 100%; 
-    
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
- }
+
 
  .fas {
    display: none;
@@ -69,7 +56,7 @@ li {
 
 }
 
-.nav-anchors {
+a {
     text-decoration: none;
     letter-spacing: 0.15em;
     color: rgb(109, 104, 104);
@@ -88,7 +75,7 @@ h2 {
 }
 
 img {
-    margin: 5em 0 1.5em 0;
+    margin: 10em 0 1.5em 0;
 
     width: 45vw;
 }
@@ -110,7 +97,7 @@ p {
 .parent {
   margin: 50px auto auto auto;
   text-align: center;
-  width: 700px;
+  max-width: 700px;
   
 }
 
@@ -235,7 +222,14 @@ h4 {
   margin-left: 30px;
 }
 
+#skills {
+  padding-top: 100px;
+}
+
 /* Projects */
+#projects {
+  padding-top: 100px;
+}
 
 .project-header {
   width: 200px;
@@ -307,7 +301,7 @@ nav{
   position: fixed;
 }
 
-/* fotter */
+/* footer */
 
 footer {
   height: 300px;
@@ -339,7 +333,7 @@ p {
 }
 
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     nav {
       display: block;
       padding: 10px;
@@ -347,15 +341,17 @@ p {
     
     ul {
       padding: 0;
-      /* margin: 0; */
+  
     }
 
     li {
       margin: 0 2%;
     }
     
-}
+} */
 
+
+/* 
 @media screen and (max-width: 620px) {
     nav {
       background-color: rgb(219, 219, 190);
@@ -388,7 +384,7 @@ p {
     }
     
 
-}
+} */
 
 
 body, html {
