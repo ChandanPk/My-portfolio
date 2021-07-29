@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+
+}
+
 * {
   letter-spacing: 0.05em;
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
+}
+
+.anchors {
    color: black;
  }
-html {
-    scroll-behavior: smooth;
-    height: 100%;
 
-  }
 
 body {
     margin: 0;
@@ -20,10 +25,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     text-align: center;
-    /* background-color: rgb(241, 245, 247); */
  }
 
-
+ h2 {
+   color: #fff;
+ }
 
  .fas {
    display: none;
@@ -37,35 +43,34 @@ body {
 span {
     color: rgb(2, 201, 28);
 }
+
+.anchors > .frd-slash {
+  color: rgb(2, 201, 28);
+  font-weight: 700;
+}
+
 nav {
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(197, 224, 200);
+    background-color: #888;
     
 }
 
-li {
-    list-style-type: none;
-    display: inline;
-    padding: 10px 16px;
-    font-size: 1.2rem;
-    border: 1px solid rgb(197, 224, 200);
 
-
-}
-
-a {
+.anchors {
     text-decoration: none;
-    letter-spacing: 0.15em;
-    color: rgb(109, 104, 104);
-    font-size: 0.9em;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-right: 2px;
+    padding: 14px 16px;
+    font-size: .95rem;
+    border: 1px solid #888;
 
-    /* font-weight: ; */
   }
 
-li:hover {
+.anchors:hover {
   border: 1px solid #fff;
   border-radius: 5px;
 }
@@ -87,6 +92,11 @@ h2, h3, h5, h6, hr {
   padding: 0;
   margin: 0;
   font-weight: 600;
+}
+
+.self {
+  font-size: 2.2rem;
+  margin: 50px auto 10px auto;
 }
 
 p {
@@ -217,7 +227,7 @@ h4 {
 
 .skill-header {
   display: block;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: left;
   margin-left: 30px;
 }
@@ -243,7 +253,9 @@ h4 {
 
 .proj-section {
   margin-top: 5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+
 }
 
 .pigment {
@@ -257,9 +269,15 @@ h4 {
 }
 
 .proj-description {
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 0;
   margin-bottom: 10px;
+  color: rgb(109, 105, 105);
+}
+
+.proj-title {
+  color: black;
+  font-weight: 400;
 }
 
 
@@ -269,13 +287,24 @@ h4 {
   margin: 5px auto;
   border-radius: 10px;
   border: none;
-  background-color: #9AE6B4;  
+  background-color: #13b34b;  
+  color: #fff;
+  font-weight: 500;
 }
 
 .btn-2 {
-  border: 1px solid #9AE6B4;
+  border: 1px solid #888;
+  /* background-color: #888; */
   background-color: unset;
 
+}
+
+.btn > a {
+  color: #fff;
+}
+
+.btn-2 > a {
+  color: #11863a;
 }
 
 h4 {
@@ -284,15 +313,15 @@ h4 {
 
 .btn:hover {
   transition: 100ms;
-  box-shadow: 4px 2px 9px -2px rgba(43,54,43,0.75);
+  box-shadow: 4px 2px 9px -2px rgba(64, 102, 64, 0.75);
   cursor: pointer;
 
 }
 
 
 .upload-time {
-  font-size: 0.8em;
-  color:rgb(90, 97, 92);
+  font-size: 0.75rem;
+  color:rgb(160, 165, 161);
   margin: 10px auto;
 }
 
@@ -313,6 +342,7 @@ footer {
   display: inline-block;
    margin: 50px auto;
    font-size: 2.5rem;
+   font-weight: 200;
 
 }
 
@@ -320,7 +350,12 @@ footer {
 .icon-sec {
   margin: 0 15px 50px 15px;
   display: inline-block;
-  font-size: 1.5rem;
+}
+
+.icon-sec:hover {
+  transition: 100ms;
+  font-size: 1.3rem;
+
 }
 
 p {
@@ -330,6 +365,10 @@ p {
 
 .project-list {
   margin-left: 10px;
+}
+
+.icon-sec > a {
+  color: unset;
 }
 
 
@@ -393,15 +432,17 @@ body, html {
 }
 
 #parent {
-  /* The image used */
-  /* background-image: url("https://previews.123rf.com/images/oatstocker/oatstocker1712/oatstocker171200140/92091201-notepad-with-pencil-on-wood-board-background-using-wallpaper-for-education-business-photo-take-note-.jpg"); */
   background: rgb(219, 219, 190);
-  /* Full height */
   height: 100%; 
   
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+
+#copyright {
+  color: rgb(161, 157, 157);
+  margin-top: 10px;
+  font-size: .7rem;
 }
