@@ -75,8 +75,7 @@ h2 {
 
 img {
     margin: 10em 0 1.5em 0;
-
-    width: 49%;
+    width: 47%;
 }
 
 /* anchors styles */
@@ -388,9 +387,6 @@ div a p {
   font-size: .7rem;
 }
 
-.burger-nav {
-  /* display: none; */
-}
 
 @media screen and (max-width: 760px) {
 
@@ -438,7 +434,7 @@ div a p {
     height: 48px;
     display: block;
     background-color: #888;  
-}
+  }
 
   .title {
     margin: 0.8rem;
@@ -490,5 +486,9 @@ div a p {
 
   .fas:hover {
     cursor: pointer;
+  }
+
+  img {
+    margin-top: 190px;
   }
 }
