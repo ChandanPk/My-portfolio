@@ -1,35 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
 
-}
+/** Basic styles **/
 
 * {
   letter-spacing: 0.05em;
 }
 
-a {
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
-.anchors {
-   color: black;
- }
-
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    margin: auto;
-    text-align: center;
- }
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  text-align: center;
+}
+
+#parent {
+  background: rgb(219, 219, 190);
+  height: 100%;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
 
  h2 {
    color: #fff;
  }
+
+ h4 {
+  letter-spacing: 1px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 25px;
+  font-size: .9rem;
+}
 
  .fas {
    display: none;
@@ -44,10 +59,6 @@ span {
     color: rgb(2, 201, 28);
 }
 
-.anchors > .frd-slash {
-  color: rgb(2, 201, 28);
-  font-weight: 700;
-}
 
 nav {
     height: 70px;
@@ -58,23 +69,6 @@ nav {
     
 }
 
-
-.anchors {
-    text-decoration: none;
-    letter-spacing: 3px;
-    color: #fff;
-    margin-right: 2px;
-    padding: 14px 16px;
-    font-size: .95rem;
-    border: 1px solid #888;
-
-  }
-
-.anchors:hover {
-  border: 1px solid #fff;
-  border-radius: 5px;
-}
-
 h2 {
     font-size: 1.5rem;
 }
@@ -82,13 +76,38 @@ h2 {
 img {
     margin: 10em 0 1.5em 0;
 
-    width: 45vw;
+    width: 49%;
+}
+
+/* anchors styles */
+
+a {
+  text-decoration: none;
+}
+
+ .anchors > .frd-slash {
+  color: rgb(2, 201, 28);
+  font-weight: 700;
+}
+
+.anchors:hover {
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.anchors {
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-right: 2px;
+  padding: 14px 16px;
+  font-size: .9rem;
+  border: 1px solid #888;
 }
 
 /* about-me */
 
 h2, h3, h5, h6, hr {
-  /* color: #ffffff; */
   padding: 0;
   margin: 0;
   font-weight: 600;
@@ -100,15 +119,20 @@ h2, h3, h5, h6, hr {
 }
 
 p {
-  /* color: #dddddd; */
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 .parent {
   margin: 50px auto auto auto;
   text-align: center;
-  max-width: 700px;
-  
+  max-width: 600px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.content {
+  margin-top: 20px;
 }
 
 
@@ -138,10 +162,11 @@ hr {
 
   display: inline-block;
   text-transform: uppercase;
-  font-size: 11.5px;
+  font-size: 1.3rem;
 }
 
 .who {
+  color: black;
   margin: 10px auto 20px auto;
 }
 
@@ -155,8 +180,6 @@ h5 {
 
 
 .languages {
-  /* background-color: #303030; */
-
   margin-top: 13px;
   max-width: 750px;
   display: grid;
@@ -179,12 +202,12 @@ h6 {
     padding: 0;
 }
 
-.skills {
 
-    margin: 10em auto;
+/* Skill section */
+
+.skills {
+    margin: 2em auto;
     max-width: 800px;
-  
-    
 }
 
 
@@ -211,14 +234,6 @@ h6 {
     box-shadow: 0px 3px 18px -1px rgba(112,105,112,0.88);
 }
 
-h4 {
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 25px;
-    
-}
-
 .img-div {
     width: 180px;
     height: 170px;
@@ -236,7 +251,8 @@ h4 {
   padding-top: 100px;
 }
 
-/* Projects */
+/** Projects section**/
+
 #projects {
   padding-top: 100px;
 }
@@ -265,14 +281,14 @@ h4 {
 .project-list {
   text-align: left;
   margin-top: 3rem;
-  
+  margin-left: 10px;
 }
 
 .proj-description {
-  font-size: 15px;
+  font-size: 0.93rem;
   margin-left: 0;
   margin-bottom: 10px;
-  color: rgb(109, 105, 105);
+  color: rgb(82, 78, 78);
 }
 
 .proj-title {
@@ -280,6 +296,8 @@ h4 {
   font-weight: 400;
 }
 
+
+/** Button styles **/
 
 .btn {
   padding: 12px 16px;
@@ -294,7 +312,6 @@ h4 {
 
 .btn-2 {
   border: 1px solid #888;
-  /* background-color: #888; */
   background-color: unset;
 
 }
@@ -307,10 +324,6 @@ h4 {
   color: #11863a;
 }
 
-h4 {
-  letter-spacing: 1px;
-}
-
 .btn:hover {
   transition: 100ms;
   box-shadow: 4px 2px 9px -2px rgba(64, 102, 64, 0.75);
@@ -321,7 +334,7 @@ h4 {
 
 .upload-time {
   font-size: 0.75rem;
-  color:rgb(160, 165, 161);
+  color:rgb(123, 128, 124);
   margin: 10px auto;
 }
 
@@ -330,25 +343,25 @@ nav{
   position: fixed;
 }
 
-/* footer */
+/* Footer */
 
 footer {
-  height: 300px;
+  height: 260px;
   background-color: rgb(61, 61, 61);
   color: #fff;
 }
 
 #contact {
   display: inline-block;
-   margin: 50px auto;
-   font-size: 2.5rem;
+   margin: 40px auto;
+   font-size: 2.8rem;
    font-weight: 200;
 
 }
 
 
 .icon-sec {
-  margin: 0 15px 50px 15px;
+  margin: 0 15px 0px 15px;
   display: inline-block;
 }
 
@@ -358,91 +371,81 @@ footer {
 
 }
 
-p {
+div a p {
   margin: 3px;
   line-height: 1.5;
 }
 
-.project-list {
-  margin-left: 10px;
-}
 
 .icon-sec > a {
   color: unset;
 }
 
 
-/* @media screen and (max-width: 800px) {
-    nav {
-      display: block;
-      padding: 10px;
-    }
-    
-    ul {
-      padding: 0;
-  
-    }
-
-    li {
-      margin: 0 2%;
-    }
-    
-} */
-
-
-/* 
-@media screen and (max-width: 620px) {
-    nav {
-      background-color: rgb(219, 219, 190);
-    }
-
-    .title {
-      text-align: left;
-    }
-
-    .fas {
-      display: unset;
-      font-size: 1.5rem;
-      color: #404040;
-    }
-    .burger-nav {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    li {
-      display: block;
-      border: none;
-      text-align: left;
-      background-color: tomato;
-      border-bottom: 1px solid #fff;
-    }
-
-    ul {
-      height: 0;
-    }
-    
-
-} */
-
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-#parent {
-  background: rgb(219, 219, 190);
-  height: 100%; 
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
-
 #copyright {
   color: rgb(161, 157, 157);
-  margin-top: 10px;
+  margin-top: 60px;
   font-size: .7rem;
+}
+
+@media screen and (max-width: 850px) {
+
+  nav {
+    display: block;
+    height: 100px;
+  }
+
+  .title {
+    margin: 0.8rem;
+  }
+  .anchors {
+    /* border: none; */
+    margin: 0 1.5rem;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  .navigators {
+    /* margin: 1rem; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 80%;
+  }
+
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 460px) {
+
+
+  .title {
+    margin: 0.8rem;
+  }
+
+  .anchors {
+    margin: 0 1.5rem;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  .navigators {
+    /* margin: 1rem; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 95%;
+  }
+
+  .skill-div {
+    min-width: 50%;
+  }
+
 }
