@@ -390,6 +390,10 @@ div a p {
 
 @media screen and (max-width: 760px) {
 
+  body {
+    font-size: 15px;
+  }
+
   html {
     font-size: 15px;
   }
@@ -425,6 +429,10 @@ div a p {
 /* Mobile view */
 
 @media screen and (max-width: 480px) {
+
+  body {
+    font-size: 12px;
+  }
 
   html {
     font-size: 12px;
