@@ -15,7 +15,7 @@ body, html {
   height: 100%;
   margin: 0;
 }
-
+  
 body {
   margin: 0;
   padding: 0;
@@ -313,15 +313,7 @@ h6 {
 .btn-2 {
   border: 1px solid #888;
   background-color: unset;
-
-}
-
-.btn > a {
-  color: #fff;
-}
-
-.btn-2 > a {
-  color: #11863a;
+  color: #11863a ;
 }
 
 .btn:hover {
@@ -388,6 +380,43 @@ div a p {
   font-size: .7rem;
 }
 
+
+/* blog styles */
+
+.blog {
+  margin-bottom: 2em;
+}
+
+.blog-header {
+  padding-top: 4rem;
+}
+
+.blog-lists {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.blog-lists h2 {
+  color: black;
+}
+
+.body {
+  height: unset;
+  background-color: unset;
+
+}
+
+.blog a{
+  color: blue;
+}
+
+.footer {
+  margin-top: 12rem;
+}
+/* .blog-descrip {
+  margin-bottom: 3em;
+} */
 
 @media screen and (max-width: 760px) {
 
