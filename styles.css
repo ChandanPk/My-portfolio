@@ -373,7 +373,8 @@ div a p {
 }
 
 .blog-header {
-  padding-top: 4rem;
+  /* padding-top: 4rem;
+  margin-bottom: 0; */
 }
 
 .blog-lists {
