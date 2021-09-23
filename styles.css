@@ -520,7 +520,7 @@ div a p {
   }
 }
 
-#blog-anc {
+.blog-anc {
   display: inline-block;
   width: 100px;
   margin: auto;
@@ -530,11 +530,16 @@ div a p {
   border-radius: 10px;
   color: #13b34b;
 }
+ 
+.blog-anc:hover {
+  transition: 10ms;
+  box-shadow: 0px 3px 10px -6px rgba(0,0,0,0.81);
 
-#blog-anc:hover {
-  transition: 100ms;
-  background-color: #555;
-  /* border-color: #13b34b; */
-  color: #fff;
 }
-/* 
+
+.hr {
+  width: 8em;
+  border: none;
+  border-bottom: 13px dotted rgb(231, 231, 227);
+  margin-top: 90px;
+}
